@@ -1,0 +1,500 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(233, 228, 228);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-size: 1.2em;
+  padding: 5px 20px;
+  border-radius: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: violet;
+}
+
+button:hover {
+  background-color: rgb(122, 39, 122);
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.imgHeader {
+  margin: 20px 0px 0px 0px;
+}
+
+header {
+  background-color: #fff9ec;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgHeader img {
+  border-radius: 20px;
+  width: 80px;
+}
+
+.formHeader {
+  margin-top: 10px;
+}
+
+.formHeader input[type="search"] {
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.formHeader button[type="submit"]:focus,
+.formHeader input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+.formHeader input.inputHeader {
+  width: 120px;
+  border: 1px solid #000000;
+  padding: 8px 8px 8px 30px;
+  background: white
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+  margin-top: 10px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+#catalogo nav {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(185, 47, 84);
+  background: linear-gradient(
+    0deg,
+    rgba(185, 47, 84, 0.5382528011204482) 0%,
+    rgba(255, 249, 236, 1) 100%
+  );
+}
+
+#catalogo nav a {
+  color: #000000;
+  font-size: 21px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0px;
+}
+
+#catalogo .productsDesktop {
+  display: none;
+}
+
+#portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 55vh;
+  background-image: linear-gradient(
+      rgba(180, 123, 123, 0.486),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../Images/HarryStyles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#portada h1 {
+  color: white;
+  font-family: "Satisfy", cursive;
+  font-weight: normal;
+}
+
+hr {
+  border: none;
+  color: black;
+  height: 2px;
+  background-color: black;
+  width: 90%;
+}
+
+#destacada .container {
+  text-align: center;
+  width: 87%;
+}
+
+#destacada h2 {
+  background-color: #890c0c;
+  color: rgb(243, 228, 228);
+  padding: 10px;
+}
+
+#destacada .carta {
+  margin: 40px 0px;
+}
+
+#destacada img {
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 4px;
+}
+
+#destacada p {
+  margin: 6px;
+}
+
+#destacada button {
+  background-color: #f5ece1;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* PAGINA SALE */
+
+#portadaSale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  background-image: url(../Images/Sale.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+#productSale .container {
+  text-align: center;
+  width: 87%;
+}
+
+#productSale h2 {
+  background-color: #890c0c;
+  color: rgb(243, 228, 228);
+  padding: 10px;
+}
+
+#productSale .carta {
+  margin: 40px 0px;
+}
+
+#productSale img {
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 4px;
+}
+
+#productSale p {
+  margin: 6px;
+}
+
+#productSale del {
+  color: rgb(216, 21, 21);
+}
+
+#productSale button {
+  background-color: #f5ece1;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#saleCatalogo nav {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(219, 84, 22);
+  background: linear-gradient(
+    270deg,
+    rgba(219, 84, 22, 1) 0%,
+    rgba(255, 231, 8, 1) 100%
+  );
+}
+
+#saleCatalogo nav a {
+  color: #000000;
+  font-size: 21px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0px;
+}
+
+#saleCatalogo .productsDesktop {
+  display: none;
+}
+
+#saleCatalogo .productsDesktop {
+  display: none;
+}
+
+/* Pagina Tiendas */
+
+#stores .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#stores img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#stores h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#stores iframe {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer .container {
+  background-color: #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+footer p {
+  text-decoration: underline;
+}
+
+footer .contact {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  margin: 10px;
+  padding: 0px;
+  font-size: 0px;
+}
+
+@media (min-width: 720px) {
+  header {
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header .imgHeader {
+    margin: 20px 0px;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0px;
+  }
+
+  header select {
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: #1a33ff;
+    border: none;
+    border: 2px solid #1a33ff;
+    border-radius: 4px;
+    color: white;
+    appearance: none;
+    padding: 8px 38px 10px 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: color 0.3s ease, background-color 0.3s ease,
+      border-bottom-color 0.3s ease;
+  }
+
+  .formHeader input[type="search"] {
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .formHeader button[type="submit"]:focus,
+  .formHeader input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+  }
+
+  .formHeader input.inputHeader {
+    width: 120px;
+    border: 1px solid #000000;
+    padding: 8px 8px 8px 200px;
+    background: white
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+      no-repeat 13px center;
+  }
+
+  #catalogo .productsDevice {
+    display: none;
+  }
+
+  #catalogo .productsDesktop {
+    display: contents;
+    display: flex;
+  }
+
+  #catalogo .productsDesktop a {
+    font-size: 22px;
+    margin: 30px 0px;
+  }
+
+  #portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    background-image: url(../Images/HarryStyles.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #portada h1 {
+    font-size: 80px;
+  }
+
+  #destacada .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  #destacada .carta {
+    margin: auto;
+    margin: 10px;
+  }
+
+  #destacada .carta img {
+    width: 200px;
+    height: auto;
+  }
+
+  /* Pagina Sale */
+
+  #productSale .container {
+    width: 50%;
+  }
+
+  #productSale .products {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #productSale .carta {
+    padding: 10px;
+  }
+
+  #productSale .carta img {
+    width: 250px;
+  }
+
+  /* Pagina Tiendas */
+  #stores .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #stores .store {
+    display: flex;
+  }
+
+  #stores img {
+    width: 30%;
+    margin: 20px;
+  }
+
+  #stores h2 {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  #stores p {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    font-size: 20px;
+  }
+
+  #stores Location {
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+
+  #stores iframe {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
